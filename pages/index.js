@@ -13,6 +13,9 @@ export default function Home() {
         }}
         annotation='I to w wielu językach!'
       />
+      <main>
+        <p>Some random text</p>
+      </main>
     </Layout>
   );
 }

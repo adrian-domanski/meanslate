@@ -39,7 +39,7 @@ const Navbar = () => {
   );
 };
 
-const Nav = tw.nav`bg-theme px-5 py-4 flex items-center justify-between relative`;
+const Nav = tw.nav`bg-theme px-5 py-4 flex items-center z-50 justify-between relative`;
 
 const Logo = tw.img`w-44`;
 
