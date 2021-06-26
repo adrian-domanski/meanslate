@@ -11,7 +11,7 @@ import tw, { styled } from 'twin.macro';
 const LetsGetStartedSection = () => {
   return (
     <div tw='relative'>
-      <BackgroundImage src='/images/bg_3.png' alt='Tło' />
+      <BackgroundImage src='/images/bg_3.png' alt='Tło' tw='hidden lg:block' />
       <Section tw='max-w-5xl'>
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>
@@ -74,6 +74,8 @@ const BackgroundImage = styled.img`
   ${tw`absolute w-screen`}
   z-index: -1;
   top: -400px;
+  min-height: 800px;
+  object-fit: cover;
   left: 0;
 `;
 

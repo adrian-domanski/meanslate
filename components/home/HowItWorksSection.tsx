@@ -5,7 +5,7 @@ import tw, { styled } from 'twin.macro';
 const HowItWorksSection = () => {
   return (
     <div tw='relative'>
-      <Elipse src='/images/elipse_2.svg' alt='Elipsa' />
+      <Elipse src='/images/elipse_2.svg' alt='Elipsa' tw='hidden lg:block' />
       <Section>
         <SectionTitle>
           <ThemeColor>How it works</ThemeColor>?<br />
