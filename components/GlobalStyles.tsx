@@ -4,13 +4,15 @@ import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
   body, html, #__next {
-    height: 100%;
+    min-height: 100%;
   }
 
   body {
     -webkit-tap-highlight-color: ${theme`colors.purple.500`};
     ${tw`antialiased`};
     font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+    background-color: #fdfdfd;
   }
 `;
 
