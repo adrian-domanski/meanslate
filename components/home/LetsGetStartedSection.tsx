@@ -8,10 +8,22 @@ import {
 } from '../../styles/components';
 import tw, { styled } from 'twin.macro';
 
-const LetsGetStartedSection = () => {
+interface ILetsGetStartedSection {
+  hasBackground?: boolean;
+}
+
+const LetsGetStartedSection: React.FC<ILetsGetStartedSection> = ({
+  hasBackground = true,
+}) => {
   return (
     <div tw='relative'>
-      <BackgroundImage src='/images/bg_3.png' alt='Tło' tw='hidden lg:block' />
+      {hasBackground && (
+        <BackgroundImage
+          src='/images/bg_3.png'
+          alt='Tło'
+          tw='hidden lg:block'
+        />
+      )}
       <Section tw='max-w-5xl'>
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>

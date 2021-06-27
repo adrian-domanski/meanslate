@@ -5,7 +5,11 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import Head from 'next/head';
 
-const Layout = ({ children }) => {
+interface ILayout {
+  footerBgURL?: string;
+}
+
+const Layout: React.FC<ILayout> = ({ children, footerBgURL }) => {
   return (
     <>
       <Head>
@@ -15,7 +19,7 @@ const Layout = ({ children }) => {
       <PageWrapper>
         <Navbar />
         {children}
-        <Footer />
+        <Footer footerBgURL={footerBgURL} />
       </PageWrapper>
     </>
   );

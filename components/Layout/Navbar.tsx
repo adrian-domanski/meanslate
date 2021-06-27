@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
 import { Button } from '../../styles/components';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const { pathname } = useRouter();
 
   return (
     <Nav>
@@ -23,22 +25,30 @@ const Navbar = () => {
         <MenuList isMobileOpen={isMobileOpen}>
           <MenuListItem>
             <Link href='/' passHref>
-              <MenuListLink isActive={true}>Strona główna</MenuListLink>
+              <MenuListLink isActive={pathname === '/'}>
+                Strona główna
+              </MenuListLink>
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
-              <MenuListLink>Referencje</MenuListLink>
+            <Link href='/referencje' passHref>
+              <MenuListLink isActive={pathname === '/referencje'}>
+                Referencje
+              </MenuListLink>
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
-              <MenuListLink>Oferta</MenuListLink>
+            <Link href='/oferta' passHref>
+              <MenuListLink isActive={pathname === '/oferta'}>
+                Oferta
+              </MenuListLink>
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
-              <MenuListLink>Kontakt</MenuListLink>
+            <Link href='/kontakt' passHref>
+              <MenuListLink isActive={pathname === '/kontakt'}>
+                Kontakt
+              </MenuListLink>
             </Link>
           </MenuListItem>
         </MenuList>
@@ -60,7 +70,9 @@ const Navbar = () => {
   );
 };
 
-const Nav = tw.nav`bg-theme`;
+const Nav = styled.nav`
+  ${tw`bg-transparent h-40`}
+`;
 
 const Logo = tw.img`w-44 lg:(w-60)`;
 

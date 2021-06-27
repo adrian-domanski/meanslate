@@ -17,6 +17,7 @@ export default function Home() {
           alt: 'Kontynenty',
         }}
         annotation='I to w wielu językach!'
+        bgImg='/images/header_bg.svg'
       />
 
       <main>
