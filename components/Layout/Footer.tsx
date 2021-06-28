@@ -30,7 +30,7 @@ const Footer: React.FC<IFooter> = ({ footerBgURL }) => {
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
+            <Link href='/referencje' passHref>
               <MenuListLink
                 isActive={pathname === '/referencje'}
                 footerBgURL={footerBgURL}
@@ -40,7 +40,7 @@ const Footer: React.FC<IFooter> = ({ footerBgURL }) => {
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
+            <Link href='/oferta' passHref>
               <MenuListLink
                 isActive={pathname === '/oferta'}
                 footerBgURL={footerBgURL}
@@ -50,7 +50,7 @@ const Footer: React.FC<IFooter> = ({ footerBgURL }) => {
             </Link>
           </MenuListItem>
           <MenuListItem>
-            <Link href='/' passHref>
+            <Link href='/kontakt' passHref>
               <MenuListLink
                 isActive={pathname === '/kontakt'}
                 footerBgURL={footerBgURL}
@@ -101,7 +101,7 @@ const MenuListLink = styled.a<{ isActive?: boolean; footerBgURL?: string }>(
   ({ isActive, footerBgURL }) => [
     tw`text-lightGray transition-colors 2xl:tracking-widest`,
     isActive && tw`text-black`,
-    !isActive && tw`hover:text-gray-400`,
+    !isActive && tw`hover:text-gray-700`,
     footerBgURL && tw`text-shadow-md`,
     footerBgURL && !isActive && tw`text-white`,
     footerBgURL &&
@@ -127,6 +127,6 @@ const MeanslateLogo = styled.div<{ footerBgURL?: string }>(
   ]
 );
 
-const SVGWave = tw.img`absolute block top-0 transform w-full -translate-y-full`;
+const SVGWave = tw.img`absolute block top-1 transform w-full -translate-y-full`;
 
 export default Footer;

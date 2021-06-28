@@ -14,6 +14,12 @@ module.exports = {
         lightGray: '#dbd8d8',
         textColor: '#222629',
       },
+      letterSpacing: {
+        huge: '0.2em',
+      },
+      zIndex: {
+        '-10': '-10',
+      },
       screens: {
         '3xl': '1600px',
       },
