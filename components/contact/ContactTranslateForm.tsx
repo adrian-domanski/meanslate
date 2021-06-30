@@ -39,9 +39,9 @@ const ContactTranslateForm = () => {
   };
 
   return (
-    <div tw='relative'>
+    <div tw='relative lg:mt-52'>
       <Elipse src='/images/oferta/elipsa_1.png' alt='tło' />
-      <Section tw='max-w-6xl xl:(mb-96 mt-52)'>
+      <Section tw='max-w-6xl xl:(mb-96)'>
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>
         </SectionTitle>

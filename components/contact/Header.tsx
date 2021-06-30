@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header tw='relative'>
       <BackgroundImg src='/images/kontakt/bg_1.png' alt='Tło' />
-      <Section tw='mt-12 lg:(mt-24)'>
+      <Section tw='mt-12 lg:(mt-24 mb-0)'>
         <SectionTitle tw='text-center xl:text-left'>
           <ThemeColor>Bądźmy</ThemeColor> w kontakcie<ThemeColor>.</ThemeColor>
         </SectionTitle>
