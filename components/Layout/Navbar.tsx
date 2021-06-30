@@ -4,12 +4,16 @@ import Link from 'next/link';
 import { Button } from '../../styles/components';
 import { useRouter } from 'next/router';
 
-const Navbar = () => {
+interface INavbar {
+  navTransparent?: boolean;
+}
+
+const Navbar: React.FC<INavbar> = ({ navTransparent = true }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const { pathname } = useRouter();
 
   return (
-    <Nav>
+    <Nav css={[!navTransparent && tw`bg-theme h-auto lg:pb-2`]}>
       <ContentWrapper>
         <div>
           <Logo src='/images/logo.svg' alt='Meanslate' />

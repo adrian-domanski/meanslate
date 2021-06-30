@@ -10,7 +10,7 @@ export const Paragraph = tw.p`tracking-widest leading-normal text-textColor text
 
 export const Button = styled.a<{ darker?: boolean }>(
   ({ darker: secondary }) => [
-    tw`bg-theme text-white px-4 py-3 uppercase tracking-widest font-bold table hover:bg-themeDarker transition-colors`,
+    tw`bg-theme cursor-pointer text-white px-4 py-3 uppercase tracking-widest font-bold table hover:bg-themeDarker transition-colors`,
     secondary && tw`bg-themeDarker hover:bg-themeDarkest`,
   ]
 );

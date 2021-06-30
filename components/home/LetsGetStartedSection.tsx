@@ -60,15 +60,15 @@ const LetsGetStartedSection: React.FC<ILetsGetStartedSection> = ({
 
 const TranslateForm = tw.form`mt-8 lg:(grid grid-cols-12 gap-x-4)`;
 
-const Input = tw.input`p-4 shadow-custom text-gray-500 placeholder-gray-500 font-bold tracking-widest rounded block w-full`;
+export const Input = tw.input`p-4 shadow-custom text-gray-500 placeholder-gray-500 font-bold tracking-widest rounded block w-full`;
 
-const UploadFile = styled.input`
+export const UploadFile = styled.input`
   opacity: 0;
   position: absolute;
   z-index: -1;
 `;
 
-const UploadLabel = styled.label`
+export const UploadLabel = styled.label`
   ${tw`px-4 font-bold text-gray-500 bg-white tracking-widest cursor-pointer items-center shadow-custom mt-4 flex justify-between lg:(mt-0)`}
   padding-top: 16px;
   padding-bottom: 16px;

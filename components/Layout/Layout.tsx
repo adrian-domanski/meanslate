@@ -7,9 +7,14 @@ import Head from 'next/head';
 
 interface ILayout {
   footerBgURL?: string;
+  navTransparent?: boolean;
 }
 
-const Layout: React.FC<ILayout> = ({ children, footerBgURL }) => {
+const Layout: React.FC<ILayout> = ({
+  children,
+  footerBgURL,
+  navTransparent,
+}) => {
   return (
     <>
       <Head>
@@ -17,7 +22,7 @@ const Layout: React.FC<ILayout> = ({ children, footerBgURL }) => {
       </Head>
       <GlobalStyles />
       <PageWrapper>
-        <Navbar />
+        <Navbar navTransparent={navTransparent} />
         {children}
         <Footer footerBgURL={footerBgURL} />
       </PageWrapper>
