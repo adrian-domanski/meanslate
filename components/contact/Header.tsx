@@ -74,7 +74,7 @@ const Header = () => {
   );
 };
 
-const HeaderImg = tw.img`mt-8 block w-2/3 mx-auto xl:(relative w-full bottom-44 left-44)`;
+const HeaderImg = tw.img`mt-8 block w-2/3 mx-auto xl:(-mr-36 relative -z-10 w-full bottom-52 left-24)`;
 const ContactList = tw.div`mt-8 flex flex-col space-y-8 justify-center text-center md:(flex-row items-center space-y-0 justify-around mt-12 mb-12) xl:(flex-col w-1/3 block space-y-12)`;
 const ContactListGroup = tw.div`lg:(flex text-left)`;
 const ContactIcon = tw.img`block mx-auto w-12 lg:(w-12 h-10 m-0 mt-1)`;
