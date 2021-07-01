@@ -33,7 +33,7 @@ const Layout: React.FC<ILayout> = ({
       });
     });
 
-    // Fade in up
+    // Fade up
     gsap.utils.toArray('.fade-up').forEach((el: HTMLElement) => {
       gsap.from(el, {
         opacity: 0,
