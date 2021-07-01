@@ -19,12 +19,12 @@ const WhatOtherSaySection = () => {
           <br />
           Poznaj nasze referencje<ThemeColor>.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='max-w-4xl'>
+        <Paragraph tw='max-w-4xl' className='fade-up'>
           Za nami współpraca z setkami przedsiębiorstw różnej wielkości i z
           różnych sektorów. Tłumaczymy również dla osób prywatnych. Sprawdź, jak
           oceniana jest nasza usługa!
         </Paragraph>
-        <OpinionGrid>
+        <OpinionGrid className='stagger'>
           <OpinionItem
             avatar='/images/referencje/placeholder.png'
             stars={5}

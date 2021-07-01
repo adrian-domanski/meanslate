@@ -15,12 +15,12 @@ const ChooseUsSection = () => {
         <SectionTitle>
           Wybierz biuro tłumaczeń godne <ThemeColor>zaufania.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='max-w-5xl'>
+        <Paragraph tw='max-w-5xl' className='fade-up'>
           Nie musisz nam wierzyć na słowo: sprawdź nasze referencje, sprawdź
           opinie o naszej pracy i sam zdecyduj, czy współpraca z nami będzie
           dobrym wyborem. Z jakimi branżami współpracujemy?
         </Paragraph>
-        <BoxGrid>
+        <BoxGrid className='stagger'>
           <BoxGridItem>
             <BoxGridItemText>Osoby prywatne</BoxGridItemText>
           </BoxGridItem>

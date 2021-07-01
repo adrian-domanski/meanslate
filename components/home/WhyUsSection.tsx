@@ -19,14 +19,14 @@ const WhyUsSection = () => {
           <br />
           <ThemeColor>Poznaj</ThemeColor> nas!
         </SectionTitle>
-        <Paragraph tw='mb-12'>
+        <Paragraph tw='mb-12' className='fade-up'>
           Jesteśmy zgranym zespołem specjalistów z dużym doświadczeniem, którzy
           zebrali się pod jednym sztandarem, aby zaoferować nową jakość
           tłumaczeń online.
         </Paragraph>
 
         {/* Why us list */}
-        <WhyUsListWrapper>
+        <WhyUsListWrapper className='stagger'>
           <WhyUsItem
             icon={{ src: '/images/icons/happy.svg', alt: 'Uśmiech' }}
             title='Świetny kontakt'

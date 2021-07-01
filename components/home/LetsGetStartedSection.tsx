@@ -28,10 +28,10 @@ const LetsGetStartedSection: React.FC<ILetsGetStartedSection> = ({
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='text-center max-w-md mx-auto'>
+        <Paragraph tw='text-center max-w-md mx-auto' className='fade-up'>
           Z naszą pomocą przetłumaczysz dokumenty w kilkunastu językach
         </Paragraph>
-        <TranslateForm>
+        <TranslateForm className='stagger'>
           <Input type='text' placeholder='Język dokumentu' tw='lg:col-span-3' />
           <Input
             type='text'

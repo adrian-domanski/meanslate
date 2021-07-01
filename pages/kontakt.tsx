@@ -9,6 +9,7 @@ const kontakt = () => {
     <Layout
       navTransparent={false}
       footerBgURL='/images/oferta/custom_footer.png'
+      title='Kontakt'
     >
       <Header />
       <main>

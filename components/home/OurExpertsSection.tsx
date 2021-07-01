@@ -17,7 +17,7 @@ const OurExpertsSection = () => {
           <ThemeColor>Global reach</ThemeColor>.<br />
           Experts from all over the world.
         </SectionTitle>
-        <Paragraph tw='lg:(max-w-2xl mb-12)'>
+        <Paragraph tw='lg:(max-w-2xl mb-12)' className='fade-up'>
           We invest in human resources, technological innovation and{' '}
           <b>we care about development</b> to continue to meet the growing
           demand for language services <b>around the world</b>.
@@ -26,7 +26,7 @@ const OurExpertsSection = () => {
           src='/images/experts-around-world.svg'
           alt='experts from all over the world'
         />
-        <LanguageList>
+        <LanguageList className='stagger'>
           <LanguageListItem>
             <Dot />
             English - 36%

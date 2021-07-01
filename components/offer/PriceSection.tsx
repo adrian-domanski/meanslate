@@ -16,7 +16,7 @@ const PriceSection = () => {
         <SectionTitle tw='text-center'>
           Ceny <ThemeColor>tłumaczeń.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='text-center'>
+        <Paragraph tw='text-center' className='fade-up'>
           Wybierz tłumaczenie, którego potrzebujesz.
         </Paragraph>
         <PriceCardsGrid>
@@ -102,7 +102,9 @@ const PriceSection = () => {
             customStyles={[tw`hidden xl:(block scale-75 -ml-16)`]}
           />
         </PriceCardsGrid>
-        <OtherLanguages>Tłumaczymy wszystkie inne języki</OtherLanguages>
+        <OtherLanguages className='fade-up'>
+          Tłumaczymy wszystkie inne języki
+        </OtherLanguages>
       </Section>
     </div>
   );

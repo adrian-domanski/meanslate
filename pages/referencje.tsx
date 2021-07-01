@@ -9,7 +9,10 @@ import tw from 'twin.macro';
 
 const Reference = () => {
   return (
-    <Layout footerBgURL='/images/referencje/custom_footer.png'>
+    <Layout
+      footerBgURL='/images/referencje/custom_footer.png'
+      title='Referencje'
+    >
       <PageHeader
         title='Najwyższa jakość usług?'
         subtitle='Mamy na to dowody!'

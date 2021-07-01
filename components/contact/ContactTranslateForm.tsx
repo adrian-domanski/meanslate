@@ -45,10 +45,10 @@ const ContactTranslateForm = () => {
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='text-center'>
+        <Paragraph tw='text-center' className='fade-up'>
           Z naszą pomocą przetłumaczysz dokumenty w kilkunastu językach!
         </Paragraph>
-        <TranslateForm>
+        <TranslateForm className='stagger'>
           <InputWrapper>
             <SelectInput
               as='select'

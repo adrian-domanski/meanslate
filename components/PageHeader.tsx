@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import tw, { styled } from 'twin.macro';
 import ScrollDownIcon from './ScrollDownIcon';
+import gsap from 'gsap';
 
 interface IPageHeader {
   title?: string;
@@ -20,12 +21,26 @@ const PageHeader: React.FC<IPageHeader> = ({
   annotation,
   bgImg,
 }) => {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: {
+        duration: 1,
+        transformOrign: 'center',
+        delay: 0.5,
+        stagger: 0.5,
+        opacity: 0,
+      },
+    });
+
+    tl.from('.g-content-wrapper > *:not(img)', { y: 50 });
+  }, []);
+
   return (
     <Header bgImg={bgImg}>
       <BackgroundImg src={bgImg} alt='tło' />
-      <ContentWrapper>
-        <Title>{title}</Title>
-        <SubTitle>{subtitle}</SubTitle>
+      <ContentWrapper className='g-content-wrapper'>
+        <Title className='page-header-title'>{title}</Title>
+        <SubTitle className='page-header-subtitle'>{subtitle}</SubTitle>
         <Annotation>{annotation}</Annotation>
         {img && <AdditionalImg src={img.src} alt={img.alt} />}
       </ContentWrapper>

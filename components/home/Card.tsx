@@ -24,9 +24,11 @@ const Card: React.FC<ICardComponent> = ({
       </CardHeader>
       <CardBody type={type}>
         <CardIcon src={icon.src} alt={icon.alt} />
-        <CardList>
+        <CardList className='stagger'>
           {listItems.map((item, index) => (
-            <CardListItem key={index}>{item}</CardListItem>
+            <CardListItem key={index} className='stagger'>
+              {item}
+            </CardListItem>
           ))}
         </CardList>
       </CardBody>

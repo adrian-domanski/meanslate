@@ -29,17 +29,19 @@ const WhatYouExpectSection = () => {
             Tłumaczenia <ThemeColor>jakich</ThemeColor> oczekujesz
             <ThemeColor>.</ThemeColor>
           </SectionTitle>
-          <Paragraph>
+          <Paragraph className='fade-up'>
             Nasza oferta? Profesjonalne tłumaczenia zarówno dla klientów
             indywidualnych, jak i biznesowych - od tłumaczeń korespondencji,
             przez tłumaczenia dokumentów technicznych, aplikacji czy ofertę
             translacji systemów dla branży IT.
           </Paragraph>
-          <Paragraph tw='mt-5'>
+          <Paragraph tw='mt-5' className='fade-up'>
             Zobacz naszą ofertę i wybierz partnera, nie podwykonawcę.
           </Paragraph>
           <Link href='/' passHref>
-            <Button tw='mx-auto mt-5 lg:ml-0'>Dowiedz się więcej</Button>
+            <Button tw='mx-auto mt-5 lg:ml-0' className='fade-up'>
+              Dowiedz się więcej
+            </Button>
           </Link>
         </div>
 

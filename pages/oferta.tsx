@@ -9,10 +9,10 @@ import tw from 'twin.macro';
 
 const Offer = () => {
   return (
-    <Layout footerBgURL='/images/oferta/custom_footer.png'>
+    <Layout footerBgURL='/images/oferta/custom_footer.png' title='Oferta'>
       <PageHeader
-        title='Tłumaczymy.'
-        subtitle='Profesjonalnie, specjalistycznie i w trymiga!'
+        title='Oferta?'
+        subtitle='Dopasowana do Twoich potrzeb'
         bgImg='/images/oferta/header_bg.png'
       />
 

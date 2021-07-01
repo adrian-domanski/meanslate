@@ -18,12 +18,12 @@ const ContactUsFormSection = () => {
         <SectionTitle tw='text-center'>
           Skontaktuj się <ThemeColor>z nami.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='text-center mb-24'>
+        <Paragraph tw='text-center mb-24' className='fade-up'>
           Masz pytania, wątpliwości, chcesz zlecić nam tłumaczenie? W takim
           razie wypełnij poniższy formularz, zadzwoń lub wyślij wiadomość na
           naszego maila - jesteśmy do dyspozycji!
         </Paragraph>
-        <ContactForm>
+        <ContactForm className='stagger'>
           <div tw='lg:(flex space-x-8)'>
             <Input placeholder='Imię' />
             <Input placeholder='Nazwisko' tw='mt-4 lg:mt-0' />

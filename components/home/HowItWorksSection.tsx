@@ -12,7 +12,7 @@ const HowItWorksSection = () => {
           Short cheat sheet<ThemeColor>.</ThemeColor>
         </SectionTitle>
 
-        <StepsWrapper>
+        <StepsWrapper className='stagger'>
           <StepWrapper>
             <Circle>1</Circle>
             <StepTitle>First step</StepTitle>

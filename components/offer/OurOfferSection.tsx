@@ -16,10 +16,10 @@ const OurOfferSection = () => {
         <br />
         <ThemeColor>jakie</ThemeColor> tłumaczenia wykonujemy
       </SectionTitle>
-      <Paragraph tw='text-center'>
+      <Paragraph tw='text-center' className='fade-up'>
         Tłumaczymy szybko, sumiennie i w wielu językach
       </Paragraph>
-      <OfferGrid>
+      <OfferGrid className='stagger'>
         <OfferGridItem
           description={
             <>

@@ -15,16 +15,20 @@ const Header = () => {
         <SectionTitle tw='text-center xl:text-left'>
           <ThemeColor>Bądźmy</ThemeColor> w kontakcie<ThemeColor>.</ThemeColor>
         </SectionTitle>
-        <Paragraph tw='lg:(mb-12) text-center xl:(text-left)'>
+        <Paragraph
+          tw='lg:(mb-12) text-center xl:(text-left)'
+          className='fade-up'
+        >
           Zapraszamy na spotkanie!
         </Paragraph>
         <SectionWrapper>
           <HeaderImg
             src='/images/kontakt/header_bg.png'
             alt='Bądżmy w kontakcie'
+            className='fade-up'
           />
 
-          <ContactList>
+          <ContactList className='stagger'>
             <ContactListGroup>
               <ContactIcon src='/images/kontakt/icons/place.svg' alt='Adres' />
               <ContentWrapper>

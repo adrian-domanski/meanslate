@@ -22,12 +22,12 @@ const LetsWorkTogether = () => {
         <SectionTitle tw='text-center'>
           <ThemeColor>Gotowy?</ThemeColor> No to tłumaczymy!
         </SectionTitle>
-        <Paragraph tw='text-center'>
+        <Paragraph tw='text-center' className='fade-up'>
           Skontaktuj się z nami już dziś - to nic zobowiązującego.
           <br />
           Mamy nadzieję, że będzie to początek owocnej współpracy!
         </Paragraph>
-        <ButtonsWrapper>
+        <ButtonsWrapper className='stagger'>
           <Link href='/kontakt' passHref>
             <Button tw='w-full mt-8 text-center md:(table w-auto px-8)'>
               Skontaktuj się z nami
