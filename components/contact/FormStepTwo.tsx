@@ -27,7 +27,7 @@ const FormStepTwo = () => {
           onChange={() => setType('private')}
         />
       </div>
-      <div tw='space-y-4 text-right col-span-12 lg:(grid grid-cols-3 space-y-0 gap-4 items-center justify-center mb-8)'>
+      <div tw='space-y-4 text-right col-span-12 md:(grid grid-cols-2 space-y-0 gap-4) lg:(grid-cols-3 items-center justify-center mb-8)'>
         <Input placeholder='Imię*' name='firstName' />
         <Input placeholder='Nazwisko*' name='lastName' />
         <Input placeholder='E-mail*' name='email' />
@@ -40,7 +40,7 @@ const FormStepTwo = () => {
             <Input placeholder='Miasto*' name='city' />
             <Input placeholder='Kod pocztowy*' name='postCode' />
             <div>
-              <Paragraph tw='text-right lg:text-center'>
+              <Paragraph tw='text-right md:(text-left) lg:text-center'>
                 *pole obowiązkowe
               </Paragraph>
             </div>
