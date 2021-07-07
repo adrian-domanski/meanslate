@@ -26,7 +26,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+      textColor: ['checked'],
+    },
   },
   plugins: [require('tailwindcss-textshadow')],
 };

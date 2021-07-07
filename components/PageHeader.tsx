@@ -25,7 +25,7 @@ const PageHeader: React.FC<IPageHeader> = ({
     const tl = gsap.timeline({
       defaults: {
         duration: 1,
-        transformOrign: 'center',
+        transformOrigin: 'center',
         delay: 0.5,
         stagger: 0.5,
         opacity: 0,
