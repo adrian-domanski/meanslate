@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
-import tw from 'twin.macro';
+import tw, { TwStyle } from 'twin.macro';
 import {
   Section,
   SectionTitle,
   ThemeColor,
   Paragraph,
-  Button,
 } from '../../styles/components';
-import { Input, UploadFile, UploadLabel } from '../home/LetsGetStartedSection';
+import { Input } from '../home/LetsGetStartedSection';
 import FormStepOne from './FormStepOne';
 import FormStepTwo from './FormStepTwo';
 
-const ContactTranslateForm = () => {
+interface IContactTranslateForm {
+  bg?: {
+    src: string;
+    alt: string;
+    css?: [TwStyle?, string?];
+  };
+}
+
+const ContactTranslateForm: React.FC<IContactTranslateForm> = ({ bg }) => {
   const [targetLanguage, setTargetLanguage] = useState('');
   const [documentLanguage, setDocumentLanguage] = useState('');
   const [file, setFile] = useState<File>();
@@ -35,7 +42,7 @@ const ContactTranslateForm = () => {
 
   return (
     <div tw='relative lg:mt-52'>
-      <Elipse src='/images/oferta/elipsa_1.png' alt='tło' />
+      {bg && <BackgroundImage src={bg.src} alt={bg.alt} css={bg.css} />}
       <Section tw='max-w-6xl xl:(mb-96)'>
         <SectionTitle tw='text-center'>
           <ThemeColor>Zacznij</ThemeColor> tłumaczyć<ThemeColor>.</ThemeColor>
@@ -69,6 +76,7 @@ export const SelectInput = tw(
 export const SelectOption = tw.option`cursor-pointer`;
 export const InputWrapper = tw.div`relative lg:(col-span-3) cursor-pointer`;
 export const InputIcon = tw.img`block absolute top-1/2 transform -translate-y-1/2 right-4`;
-export const Elipse = tw.img`hidden xl:(block absolute top-52 -z-10 left-0)`;
+// export const BackgroundImage = tw.img`hidden xl:(block absolute top-52 -z-10 left-0)`;
+export const BackgroundImage = tw.img``;
 
 export default ContactTranslateForm;

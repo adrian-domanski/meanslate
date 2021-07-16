@@ -18,11 +18,7 @@ const LetsGetStartedSection: React.FC<ILetsGetStartedSection> = ({
   return (
     <div tw='relative'>
       {hasBackground && (
-        <BackgroundImage
-          src='/images/bg_3.png'
-          alt='Tło'
-          tw='hidden lg:block'
-        />
+        <BackgroundImage src='' alt='Tło' tw='hidden lg:block' />
       )}
       <Section tw='max-w-5xl'>
         <SectionTitle tw='text-center'>
@@ -84,11 +80,6 @@ export const UploadLabel = styled.label`
 
 const BackgroundImage = styled.img`
   ${tw`absolute w-screen`}
-  z-index: -1;
-  top: -400px;
-  min-height: 800px;
-  object-fit: cover;
-  left: 0;
 `;
 
 export default LetsGetStartedSection;

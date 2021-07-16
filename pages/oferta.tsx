@@ -6,6 +6,7 @@ import OurOfferSection from '../components/offer/OurOfferSection';
 import LetsWorkTogether from '../components/offer/LetsWorkTogether';
 import LetsGetStartedSection from '../components/home/LetsGetStartedSection';
 import tw from 'twin.macro';
+import ContactTranslateForm from '../components/contact/ContactTranslateForm';
 
 const Offer = () => {
   return (
@@ -20,15 +21,16 @@ const Offer = () => {
         <PriceSection />
         <OurOfferSection />
         <LetsWorkTogether />
-        <div tw='relative'>
-          <BackgroundImg src='/images/oferta/elipsa_2.png' alt='tło' />
-          <LetsGetStartedSection hasBackground={false} />
-        </div>
+        <ContactTranslateForm
+          bg={{
+            src: '/images/oferta/elipsa_2.png',
+            alt: 'tło',
+            css: [tw`hidden lg:(block absolute top-0 right-0 -z-10)`],
+          }}
+        />
       </main>
     </Layout>
   );
 };
-
-const BackgroundImg = tw.img`hidden lg:(block absolute top-0 right-0 -z-10)`;
 
 export default Offer;

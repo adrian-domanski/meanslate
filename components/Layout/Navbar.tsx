@@ -16,7 +16,11 @@ const Navbar: React.FC<INavbar> = ({ navTransparent = true }) => {
     <Nav css={[!navTransparent && tw`bg-theme h-auto lg:pb-2`]}>
       <ContentWrapper>
         <div>
-          <Logo src='/images/logo.svg' alt='Meanslate' />
+          <Link href='/' passHref>
+            <a>
+              <Logo src='/images/logo.svg' alt='Meanslate' />
+            </a>
+          </Link>
         </div>
         <Hamburger
           onClick={() => {

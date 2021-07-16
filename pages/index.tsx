@@ -4,7 +4,8 @@ import WhatYouExpectSection from '../components/home/WhatYouExpectSection';
 import WhyUsSection from '../components/home/WhyUsSection';
 import OurExpertsSection from '../components/home/OurExpertsSection';
 import HowItWorksSection from '../components/home/HowItWorksSection';
-import LetsGetStartedSection from '../components/home/LetsGetStartedSection';
+import ContactTranslateForm from '../components/contact/ContactTranslateForm';
+import tw from 'twin.macro';
 
 export default function Home() {
   return (
@@ -25,7 +26,16 @@ export default function Home() {
         <WhyUsSection />
         <OurExpertsSection />
         <HowItWorksSection />
-        <LetsGetStartedSection />
+        <ContactTranslateForm
+          bg={{
+            src: '/images/bg_3.png',
+            alt: 'tło',
+            css: [
+              tw`absolute w-screen -z-10 object-cover left-1`,
+              `top: -400px; min-height: 800px;`,
+            ],
+          }}
+        />
       </main>
     </Layout>
   );

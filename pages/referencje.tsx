@@ -6,6 +6,7 @@ import FAQSection from '../components/reference/FAQSection';
 import WhatOtherSaySection from '../components/reference/WhatOtherSaySection';
 import LetsGetStartedSection from '../components/home/LetsGetStartedSection';
 import tw from 'twin.macro';
+import ContactTranslateForm from '../components/contact/ContactTranslateForm';
 
 const Reference = () => {
   return (
@@ -23,15 +24,22 @@ const Reference = () => {
         <ChooseUsSection />
         <WhatOtherSaySection />
         <FAQSection />
-        <div tw='relative'>
-          <Elipse src='/images/referencje/elipse_2.png' alt='tło' />
+        {/* <div tw='relative'>
+          <Elipse src='' alt='tło' />
           <LetsGetStartedSection hasBackground={false} />
-        </div>
+        </div> */}
+        <ContactTranslateForm
+          bg={{
+            src: '/images/referencje/elipse_2.png',
+            alt: 'tło',
+            css: [tw`absolute hidden xl:(block) right-0 top-0`],
+          }}
+        />
       </main>
     </Layout>
   );
 };
 
-const Elipse = tw.img`absolute hidden xl:(block) right-0 top-0`;
+const Elipse = tw.img``;
 
 export default Reference;

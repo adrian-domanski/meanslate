@@ -45,7 +45,7 @@ const Layout: React.FC<ILayout> = ({
 
     // Stagger
     gsap.utils.toArray('.stagger').forEach((el: HTMLElement) => {
-      gsap.from(el.children, {
+      gsap.from(el.children.length ? el.children : el, {
         opacity: 0,
         y: 50,
         stagger: 0.25,
