@@ -9,6 +9,7 @@ import {
 } from './ContactTranslateForm';
 import languagesJson from './languages.json';
 import 'twin.macro';
+import Link from 'next/link';
 
 const FormStepOne = ({
   targetLanguage,
@@ -80,9 +81,15 @@ const FormStepOne = ({
       >
         Wyślij zapytanie
       </Button>
-      <Button as='button' tw='mt-2 w-full lg:(col-span-4 mt-10)' darker>
-        Zobacz ofertę
-      </Button>
+      <Link href='/oferta' passHref>
+        <Button
+          as='a'
+          tw='mt-2 text-center w-full lg:(col-span-4 mt-10)'
+          darker
+        >
+          Zobacz ofertę
+        </Button>
+      </Link>
     </>
   );
 };
