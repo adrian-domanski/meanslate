@@ -61,13 +61,23 @@ const Footer: React.FC<IFooter> = ({ footerBgURL }) => {
           </MenuListItem>
         </MenuList>
         <Copyright footerBgURL={footerBgURL}>
-          <p tw='lg:(mt-8)'>Meanslate 2020. All rights reserved. From </p>
-          <img
+          <p tw='lg:(mt-8)'>
+            Meanslate 2020. All rights reserved.{' '}
+            <a
+              tw='hover:text-gray-800 transition-colors'
+              target='_blank'
+              rel='noreferrer'
+              href='https://kodario.pl'
+            >
+              Kodario.pl
+            </a>{' '}
+          </p>
+          {/* <img
             src='/images/softwise.svg'
             width={100}
             alt='Softwise'
             tw='block lg:mt-8!'
-          />
+          /> */}
         </Copyright>
       </div>
       <ContactInfo as='div' footerBgURL={footerBgURL}>
