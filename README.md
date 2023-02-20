@@ -17,4 +17,4 @@ I've included:
 * Styled components
 * TypeScript
 
-## 👉 Open [https://meanslate.vercel.app/](meanslate.app) to view it in the browser.
+## 👉 Open [meanslate.app](https://meanslate.vercel.app/) to view it in the browser.
